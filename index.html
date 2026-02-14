@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Valentine ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 50px;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1.5s forwards;
+}
+
+p {
+  font-size: 20px;
+  opacity: 0;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+button {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background: #ff4e8d;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff1e6c;
+  transform: scale(1.1);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Happy Valentine ❤️ <br> Jaan e maan</h1>
+  <button onclick="showMessage()">Open My Heart</button>
+  <p id="message">You make my world brighter every single day.</p>
+</div>
+
+<script>
+function showMessage() {
+  const msg = document.getElementById("message");
+  msg.style.opacity = "1";
+}
+</script>
+
+</body>
+</html>
